@@ -26,22 +26,22 @@ export default function Card({ item }) {
           content="contain"
           className="rounded-md mt-2"
         />
-        <h2 className="text-center text-2xl text-background my-0 font-semibold font-figtree">
+        <h2 className="text-center text-base md:text-2xl text-background my-0 font-semibold font-figtree">
           {item.name}
         </h2>
-        <p className="text-orange-red text-center text-lg font-bold">
+        <p className="text-orange-red text-center text-sm md:text-lg font-bold">
           {priceFormat}
         </p>
       </header>
       <main className="flex flex-col justify-between gap-4 grow rounded-b-xl bg-background p-4">
-        <p className="text-wrap text-center text-lg">{item.summary}</p>
+        <p className="text-wrap text-center text-sm mdtext-lg">{item.summary}</p>
         <div className="flex justify-center">
           <motion.button
             whileTap={{scale: 0.85}}
             onClick={handleAddToCart}
-            className="flex items-center justify-center bg-medium-green py-2 px-4 rounded-md text-background font-semibold text-lg hover:bg-light-green hover:cursor-pointer border-0 w-2/3"
+            className="flex items-center justify-center bg-medium-green py-2 px-4 rounded-md text-background font-semibold text-sm md:text-lg hover:bg-light-green hover:cursor-pointer border-0 w-2/3"
           >
-            <FaCartPlus className="text-xl mx-2" />
+            <FaCartPlus className="text-sm md:text-xl mx-2" />
             <span>Add to Cart</span>
           </motion.button>
         </div>

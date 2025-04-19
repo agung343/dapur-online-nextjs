@@ -8,7 +8,7 @@ export default function Header() {
             <div className="ml-2 p-[4px] bg-background rounded-2xl">
                 <Image src={logo.src} alt="dapur online" width={72} height={72} className="rounded-xl" />
             </div>
-            <h1 className="text-4xl font-bold text-background tracking-wider">DAPUR <span className="text-orange-red">ONLINE</span></h1>
+            <h1 className="text-lg md:text-4xl font-bold text-background tracking-wider">DAPUR <span className="text-orange-red">ONLINE</span></h1>
             <Navigation />
         </header>
     </>)
